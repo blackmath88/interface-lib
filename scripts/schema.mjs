@@ -1,8 +1,8 @@
-import {categories} from '../src/lib/catalog.mjs';
-const allowed=['id','title','kind','category','url','summary','tags','integrationNotes','status','addedAt','lastReviewedAt','evidence','license','sourceUrl','upstreamMcp'];
+import {categories,collections} from '../src/lib/catalog.mjs';
+const allowed=['id','title','kind','category','url','summary','tags','integrationNotes','status','addedAt','lastReviewedAt','evidence','license','sourceUrl','upstreamMcp','collections','useCases','avoidWhen','relatedIds'];
 const url=value=>{try{return new URL(value).protocol==='https:'}catch{return false}};
 const date=value=>typeof value==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(value)&&!Number.isNaN(Date.parse(value))&&new Date(value).toISOString().slice(0,10)===value;
-export function validateEntries(entries){
+export function validateEntries(entries,{checkReferences=true}={}){
  const errors=[];if(!Array.isArray(entries))return ['Catalogue must be an array'];const ids=new Set(),urls=new Set();
  for(const [i,e] of entries.entries()){
   if(!e||typeof e!=='object'||Array.isArray(e)){errors.push(`Entry ${i} must be an object`);continue}
@@ -20,7 +20,11 @@ export function validateEntries(entries){
   if(e.lastReviewedAt!==null&&!date(e.lastReviewedAt))add('invalid lastReviewedAt');
   if(!Array.isArray(e.evidence)||e.evidence.some(v=>!v||!url(v.url)||typeof v.note!=='string'||!v.note.trim()))add('invalid evidence');
   if(e.status==='reviewed'&&(!e.lastReviewedAt||!e.evidence?.length))add('reviewed entries require dated evidence');
+  for(const k of ['collections','useCases','relatedIds'])if(!Array.isArray(e[k])||e[k].some(v=>typeof v!=='string'))add(`invalid ${k}`);
+  if(e.collections?.some(c=>!collections.includes(c)))add('unknown collection');
+  if(typeof e.avoidWhen!=='string'||!e.avoidWhen.trim())add('avoidWhen is required');
   for(const k of ['sourceUrl','upstreamMcp'])if(e[k]!==null&&!url(e[k]))add(`${k} must be HTTPS or null`);
  }
+ if(checkReferences)for(const e of entries)if(e&&Array.isArray(e.relatedIds))for(const id of e.relatedIds)if(!entries.some(v=>v?.id===id))errors.push(`${e.id}: unknown related ID ${id}`);
  return errors;
 }

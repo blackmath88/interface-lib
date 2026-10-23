@@ -1,0 +1,10 @@
+import {readFile,mkdir,copyFile,writeFile} from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const html=await readFile('dist/client/index.html','utf8');
+const base=process.env.VITE_BASE_PATH||'/';
+assert.ok(html.includes('Find your next'),'Prerendered catalogue HTML missing');
+assert.ok(html.includes(`${base}assets/`),'Assets do not use the configured base path');
+await copyFile('catalog/entries.json','dist/client/catalog.json');
+await copyFile('catalog/sources.json','dist/client/sources.json');
+await writeFile('dist/client/.nojekyll','');
+console.log(`Pages artifact ready at dist/client for ${base}`);
