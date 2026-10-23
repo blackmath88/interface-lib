@@ -73,3 +73,7 @@ Third-party resource licences remain with their owners. Review the exact upstrea
 ## Version 0.2
 
 Typo-tolerant shared search, URL filters, design collections, related resources and use-case notes. The public JSON index lives at /interface-lib/catalog.json. GitHub Pages publishes static, prerendered TanStack output. Configure Settings → Pages → Source: GitHub Actions if automatic enablement is unavailable. No secrets are required for builds; the built-in GitHub Actions token deploys Pages.
+
+## Browser WebMCP
+
+The website now includes native browser-tool registration via document.modelContext. No separate server is required for WebMCP-aware browser agents. See docs/webmcp.md for the six tools, fallback behaviour and pending browser acceptance check. The existing HTTP/stdio server remains optional.
