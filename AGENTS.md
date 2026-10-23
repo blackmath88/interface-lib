@@ -11,4 +11,4 @@ This is a discovery index. Do not build, vendor or mirror third-party component 
 - No scraping or mirroring source code or assets. Link to canonical implementations.
 - Additions and updates go through a branch and PR; do not auto-merge.
 - Validate: npm run validate && npm test && npm run build && npm run typecheck && npm run test:mcp.
-- Keep the MCP read-only. validate_proposal is a dry run, not a write API.
+- Keep the optional HTTP/stdio MCP read-only. Browser WebMCP may expose only the existing local UI actions (detail dialog and shortlist), with runtime validation and current-state readback. validate_proposal is a dry run, not a write API.
