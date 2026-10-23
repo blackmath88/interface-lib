@@ -24,7 +24,15 @@
     ],
     "license": "not-checked",
     "sourceUrl": null,
-    "upstreamMcp": "https://docs.pmnd.rs/api/mcp"
+    "upstreamMcp": "https://docs.pmnd.rs/api/mcp",
+    "collections": [
+      "Spatial"
+    ],
+    "useCases": [
+      "A connected ecosystem for expressive React experiences."
+    ],
+    "avoidWhen": "The effect or dependency adds complexity without supporting the user task. Check a simpler native approach first.",
+    "relatedIds": []
   },
   {
     "id": "react-three-fiber",
@@ -51,7 +59,18 @@
     ],
     "license": "not-checked",
     "sourceUrl": null,
-    "upstreamMcp": null
+    "upstreamMcp": null,
+    "collections": [
+      "Spatial"
+    ],
+    "useCases": [
+      "Build Three.js scenes using React components."
+    ],
+    "avoidWhen": "The effect or dependency adds complexity without supporting the user task. Check a simpler native approach first.",
+    "relatedIds": [
+      "threejs",
+      "drei"
+    ]
   },
   {
     "id": "drei",
@@ -78,7 +97,18 @@
     ],
     "license": "not-checked",
     "sourceUrl": null,
-    "upstreamMcp": null
+    "upstreamMcp": null,
+    "collections": [
+      "Spatial"
+    ],
+    "useCases": [
+      "Scene helpers and abstractions for React Three Fiber."
+    ],
+    "avoidWhen": "The effect or dependency adds complexity without supporting the user task. Check a simpler native approach first.",
+    "relatedIds": [
+      "react-three-fiber",
+      "threejs"
+    ]
   },
   {
     "id": "react-spring",
@@ -104,7 +134,15 @@
     ],
     "license": "not-checked",
     "sourceUrl": null,
-    "upstreamMcp": null
+    "upstreamMcp": null,
+    "collections": [
+      "Panels & boards"
+    ],
+    "useCases": [
+      "Spring-based animation primitives for React."
+    ],
+    "avoidWhen": "The effect or dependency adds complexity without supporting the user task. Check a simpler native approach first.",
+    "relatedIds": []
   },
   {
     "id": "postprocessing",
@@ -130,7 +168,17 @@
     ],
     "license": "not-checked",
     "sourceUrl": null,
-    "upstreamMcp": null
+    "upstreamMcp": null,
+    "collections": [
+      "Editorial"
+    ],
+    "useCases": [
+      "Postprocessing effects for React Three Fiber scenes."
+    ],
+    "avoidWhen": "The effect or dependency adds complexity without supporting the user task. Check a simpler native approach first.",
+    "relatedIds": [
+      "react-three-fiber"
+    ]
   },
   {
     "id": "threejs",
@@ -157,7 +205,15 @@
     ],
     "license": "not-checked",
     "sourceUrl": null,
-    "upstreamMcp": null
+    "upstreamMcp": null,
+    "collections": [
+      "Spatial"
+    ],
+    "useCases": [
+      "The underlying 3D toolkit, with docs and a broad example collection."
+    ],
+    "avoidWhen": "The effect or dependency adds complexity without supporting the user task. Check a simpler native approach first.",
+    "relatedIds": []
   },
   {
     "id": "motion",
@@ -184,7 +240,15 @@
     ],
     "license": "not-checked",
     "sourceUrl": null,
-    "upstreamMcp": null
+    "upstreamMcp": null,
+    "collections": [
+      "Panels & boards"
+    ],
+    "useCases": [
+      "Motion tools for layouts, scrolling and gestures."
+    ],
+    "avoidWhen": "The effect or dependency adds complexity without supporting the user task. Check a simpler native approach first.",
+    "relatedIds": []
   },
   {
     "id": "shadcn-ui",
@@ -211,7 +275,15 @@
     ],
     "license": "not-checked",
     "sourceUrl": null,
-    "upstreamMcp": null
+    "upstreamMcp": null,
+    "collections": [
+      "Panels & boards"
+    ],
+    "useCases": [
+      "Composable UI components with source you can customise."
+    ],
+    "avoidWhen": "The effect or dependency adds complexity without supporting the user task. Check a simpler native approach first.",
+    "relatedIds": []
   },
   {
     "id": "react-bits",
@@ -238,7 +310,15 @@
     ],
     "license": "not-checked",
     "sourceUrl": null,
-    "upstreamMcp": null
+    "upstreamMcp": null,
+    "collections": [
+      "Editorial"
+    ],
+    "useCases": [
+      "Creative React components, text effects and backgrounds."
+    ],
+    "avoidWhen": "The effect or dependency adds complexity without supporting the user task. Check a simpler native approach first.",
+    "relatedIds": []
   },
   {
     "id": "horizontal-tiles",
@@ -265,7 +345,18 @@
     ],
     "license": "not-checked",
     "sourceUrl": null,
-    "upstreamMcp": null
+    "upstreamMcp": null,
+    "collections": [
+      "Editorial"
+    ],
+    "useCases": [
+      "An expandable, scrollable horizontal gallery reference."
+    ],
+    "avoidWhen": "The effect or dependency adds complexity without supporting the user task. Check a simpler native approach first.",
+    "relatedIds": [
+      "image-g",
+      "motion"
+    ]
   },
   {
     "id": "webgpu-glass",
@@ -292,7 +383,15 @@
     ],
     "license": "not-checked",
     "sourceUrl": null,
-    "upstreamMcp": null
+    "upstreamMcp": null,
+    "collections": [
+      "Editorial"
+    ],
+    "useCases": [
+      "Anderson Mancini\u2019s glass-material exploration."
+    ],
+    "avoidWhen": "The effect or dependency adds complexity without supporting the user task. Check a simpler native approach first.",
+    "relatedIds": []
   },
   {
     "id": "image-g",
@@ -313,6 +412,332 @@
     "evidence": [],
     "license": "not-checked",
     "sourceUrl": null,
-    "upstreamMcp": null
+    "upstreamMcp": null,
+    "collections": [
+      "Editorial"
+    ],
+    "useCases": [
+      "User-supplied image gallery reference awaiting review."
+    ],
+    "avoidWhen": "The effect or dependency adds complexity without supporting the user task. Check a simpler native approach first.",
+    "relatedIds": []
+  },
+  {
+    "id": "react-aria",
+    "title": "React Aria",
+    "url": "https://react-aria.adobe.com/",
+    "category": "UI foundations",
+    "summary": "Accessible component behaviours with freedom to style.",
+    "tags": [
+      "forms",
+      "accessible",
+      "react"
+    ],
+    "kind": "library",
+    "integrationNotes": "Read the current upstream setup and examples; verify keyboard, touch and framework compatibility in the target build.",
+    "status": "reviewed",
+    "addedAt": "2026-10-23",
+    "lastReviewedAt": "2026-10-23",
+    "evidence": [
+      {
+        "url": "https://react-aria.adobe.com/",
+        "note": "Official project overview reviewed for purpose. Source code, licence and compatibility were not audited."
+      }
+    ],
+    "license": "not-checked",
+    "sourceUrl": null,
+    "upstreamMcp": null,
+    "useCases": [
+      "Complex forms and internationalised interfaces"
+    ],
+    "collections": [
+      "Panels & boards"
+    ],
+    "avoidWhen": "The effect or dependency adds complexity without supporting the user task. Check a simpler native approach first.",
+    "relatedIds": [
+      "radix",
+      "headless-ui"
+    ]
+  },
+  {
+    "id": "radix",
+    "title": "Radix Primitives",
+    "url": "https://www.radix-ui.com/primitives",
+    "category": "UI foundations",
+    "summary": "Unstyled React primitives for custom design systems.",
+    "tags": [
+      "react",
+      "dialog",
+      "popover"
+    ],
+    "kind": "library",
+    "integrationNotes": "Read the current upstream setup and examples; verify keyboard, touch and framework compatibility in the target build.",
+    "status": "reviewed",
+    "addedAt": "2026-10-23",
+    "lastReviewedAt": "2026-10-23",
+    "evidence": [
+      {
+        "url": "https://www.radix-ui.com/primitives",
+        "note": "Official project overview reviewed for purpose. Source code, licence and compatibility were not audited."
+      }
+    ],
+    "license": "not-checked",
+    "sourceUrl": null,
+    "upstreamMcp": null,
+    "useCases": [
+      "Custom dialogs, menus and overlays"
+    ],
+    "collections": [
+      "Panels & boards"
+    ],
+    "avoidWhen": "The effect or dependency adds complexity without supporting the user task. Check a simpler native approach first.",
+    "relatedIds": [
+      "react-aria",
+      "shadcn-ui"
+    ]
+  },
+  {
+    "id": "headless-ui",
+    "title": "Headless UI",
+    "url": "https://headlessui.com/",
+    "category": "UI foundations",
+    "summary": "Unstyled interactive components for React and Vue.",
+    "tags": [
+      "react",
+      "vue",
+      "combobox"
+    ],
+    "kind": "library",
+    "integrationNotes": "Read the current upstream setup and examples; verify keyboard, touch and framework compatibility in the target build.",
+    "status": "reviewed",
+    "addedAt": "2026-10-23",
+    "lastReviewedAt": "2026-10-23",
+    "evidence": [
+      {
+        "url": "https://headlessui.com/",
+        "note": "Official project overview reviewed for purpose. Source code, licence and compatibility were not audited."
+      }
+    ],
+    "license": "not-checked",
+    "sourceUrl": null,
+    "upstreamMcp": null,
+    "useCases": [
+      "Tailwind-oriented form and navigation interfaces"
+    ],
+    "collections": [
+      "Navigation"
+    ],
+    "avoidWhen": "The effect or dependency adds complexity without supporting the user task. Check a simpler native approach first.",
+    "relatedIds": []
+  },
+  {
+    "id": "cmdk",
+    "title": "cmdk",
+    "url": "https://github.com/dip/cmdk",
+    "category": "Layout & navigation",
+    "summary": "An unstyled command menu for React applications.",
+    "tags": [
+      "react",
+      "command",
+      "search"
+    ],
+    "kind": "library",
+    "integrationNotes": "Read the current upstream setup and examples; verify keyboard, touch and framework compatibility in the target build.",
+    "status": "reviewed",
+    "addedAt": "2026-10-23",
+    "lastReviewedAt": "2026-10-23",
+    "evidence": [
+      {
+        "url": "https://github.com/dip/cmdk",
+        "note": "Official project overview reviewed for purpose. Source code, licence and compatibility were not audited."
+      }
+    ],
+    "license": "not-checked",
+    "sourceUrl": "https://github.com/dip/cmdk",
+    "upstreamMcp": null,
+    "useCases": [
+      "Keyboard-first navigation and action menus"
+    ],
+    "collections": [
+      "Navigation"
+    ],
+    "avoidWhen": "The effect or dependency adds complexity without supporting the user task. Check a simpler native approach first.",
+    "relatedIds": [
+      "fuse"
+    ]
+  },
+  {
+    "id": "fuse",
+    "title": "Fuse.js",
+    "url": "https://www.fusejs.io/",
+    "category": "UI foundations",
+    "summary": "Local fuzzy matching for browsable resource collections.",
+    "tags": [
+      "search",
+      "fuzzy",
+      "javascript"
+    ],
+    "kind": "library",
+    "integrationNotes": "Read the current upstream setup and examples; verify keyboard, touch and framework compatibility in the target build.",
+    "status": "reviewed",
+    "addedAt": "2026-10-23",
+    "lastReviewedAt": "2026-10-23",
+    "evidence": [
+      {
+        "url": "https://www.fusejs.io/",
+        "note": "Official project overview reviewed for purpose. Source code, licence and compatibility were not audited."
+      }
+    ],
+    "license": "not-checked",
+    "sourceUrl": null,
+    "upstreamMcp": null,
+    "useCases": [
+      "Typo-tolerant catalogue and command search"
+    ],
+    "collections": [
+      "Navigation"
+    ],
+    "avoidWhen": "The effect or dependency adds complexity without supporting the user task. Check a simpler native approach first.",
+    "relatedIds": []
+  },
+  {
+    "id": "tanstack-table",
+    "title": "TanStack Table",
+    "url": "https://tanstack.com/table/latest",
+    "category": "UI foundations",
+    "summary": "Headless table logic for custom data interfaces.",
+    "tags": [
+      "table",
+      "data",
+      "react"
+    ],
+    "kind": "library",
+    "integrationNotes": "Read the current upstream setup and examples; verify keyboard, touch and framework compatibility in the target build.",
+    "status": "reviewed",
+    "addedAt": "2026-10-23",
+    "lastReviewedAt": "2026-10-23",
+    "evidence": [
+      {
+        "url": "https://tanstack.com/table/latest",
+        "note": "Official project overview reviewed for purpose. Source code, licence and compatibility were not audited."
+      }
+    ],
+    "license": "not-checked",
+    "sourceUrl": null,
+    "upstreamMcp": null,
+    "useCases": [
+      "Sortable and filterable data tables"
+    ],
+    "collections": [
+      "Data visualisation"
+    ],
+    "avoidWhen": "The effect or dependency adds complexity without supporting the user task. Check a simpler native approach first.",
+    "relatedIds": []
+  },
+  {
+    "id": "tanstack-virtual",
+    "title": "TanStack Virtual",
+    "url": "https://tanstack.com/virtual/latest",
+    "category": "Layout & navigation",
+    "summary": "Virtualised rendering for long lists and grids.",
+    "tags": [
+      "virtual",
+      "lists",
+      "react"
+    ],
+    "kind": "library",
+    "integrationNotes": "Read the current upstream setup and examples; verify keyboard, touch and framework compatibility in the target build.",
+    "status": "reviewed",
+    "addedAt": "2026-10-23",
+    "lastReviewedAt": "2026-10-23",
+    "evidence": [
+      {
+        "url": "https://tanstack.com/virtual/latest",
+        "note": "Official project overview reviewed for purpose. Source code, licence and compatibility were not audited."
+      }
+    ],
+    "license": "not-checked",
+    "sourceUrl": null,
+    "upstreamMcp": null,
+    "useCases": [
+      "Large collections and dense data interfaces"
+    ],
+    "collections": [
+      "Panels & boards"
+    ],
+    "avoidWhen": "The effect or dependency adds complexity without supporting the user task. Check a simpler native approach first.",
+    "relatedIds": []
+  },
+  {
+    "id": "xyflow",
+    "title": "xyflow",
+    "url": "https://xyflow.com/",
+    "category": "Layout & navigation",
+    "summary": "Tools for node-based editors and interactive diagrams.",
+    "tags": [
+      "react",
+      "svelte",
+      "nodes",
+      "diagram"
+    ],
+    "kind": "library",
+    "integrationNotes": "Read the current upstream setup and examples; verify keyboard, touch and framework compatibility in the target build.",
+    "status": "reviewed",
+    "addedAt": "2026-10-23",
+    "lastReviewedAt": "2026-10-23",
+    "evidence": [
+      {
+        "url": "https://xyflow.com/",
+        "note": "Official project overview reviewed for purpose. Source code, licence and compatibility were not audited."
+      }
+    ],
+    "license": "not-checked",
+    "sourceUrl": null,
+    "upstreamMcp": null,
+    "useCases": [
+      "Workflow builders and connected canvases"
+    ],
+    "collections": [
+      "Data visualisation"
+    ],
+    "avoidWhen": "The effect or dependency adds complexity without supporting the user task. Check a simpler native approach first.",
+    "relatedIds": [
+      "dnd-kit"
+    ]
+  },
+  {
+    "id": "dnd-kit",
+    "title": "dnd kit",
+    "url": "https://dndkit.com/",
+    "category": "Motion & interaction",
+    "summary": "Drag-and-drop building blocks for interactive interfaces.",
+    "tags": [
+      "drag",
+      "drop",
+      "sortable",
+      "boards"
+    ],
+    "kind": "library",
+    "integrationNotes": "Read the current upstream setup and examples; verify keyboard, touch and framework compatibility in the target build.",
+    "status": "reviewed",
+    "addedAt": "2026-10-23",
+    "lastReviewedAt": "2026-10-23",
+    "evidence": [
+      {
+        "url": "https://dndkit.com/",
+        "note": "Official project overview reviewed for purpose. Source code, licence and compatibility were not audited."
+      }
+    ],
+    "license": "not-checked",
+    "sourceUrl": null,
+    "upstreamMcp": null,
+    "useCases": [
+      "Reorderable lists and interactive boards"
+    ],
+    "collections": [
+      "Panels & boards"
+    ],
+    "avoidWhen": "The effect or dependency adds complexity without supporting the user task. Check a simpler native approach first.",
+    "relatedIds": []
   }
 ]

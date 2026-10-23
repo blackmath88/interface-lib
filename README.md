@@ -1,4 +1,4 @@
-# Interface Atlas · v0.1
+# Interface Atlas · v0.2
 
 A discovery index for expressive web interfaces. Browse it visually or query it through MCP. The code, demos and documentation stay with their original authors.
 
@@ -18,7 +18,7 @@ Website: http://localhost:3000. MCP: http://127.0.0.1:3001/mcp.
 ## Included
 
 - TanStack Start v1 + React + TypeScript website.
-- 12 initial references spanning React, Three.js, animation, materials and UI foundations.
+- 21 indexed references spanning React, Three.js, animation, materials and UI foundations.
 - Shared search logic, category/type/review filters, resource detail dialogs.
 - Browser-local shortlist and exportable agent briefs (not shared across devices).
 - Streamable HTTP and stdio MCP server: five tools, two resources and one weekly-discovery prompt.
@@ -59,7 +59,7 @@ See docs/weekly-discovery.md for a bounded research prompt, evidence requirement
 
 ## Deployment and agent connection
 
-See docs/mcp.md. This is a source ZIP, not a hosted service. Build the web app with `npm run build` and choose the TanStack deployment adapter appropriate to your host. Deploy the Node MCP service separately or behind the same origin. The MCP endpoint is real protocol support, not a plain REST endpoint labelled MCP. It does not autonomously browse, download code, write Git or install components.
+See docs/mcp.md. The catalogue is deployed to GitHub Pages by .github/workflows/pages.yml on pushes to main. Pull requests run all checks without deploying. Run `VITE_BASE_PATH=/interface-lib/ npm run build` to produce dist/client/index.html, assets and catalogue JSON. Only dist/client is published; the MCP server is not included in Pages hosting. Deploy the Node MCP service separately or behind the same origin. The MCP endpoint is real protocol support, not a plain REST endpoint labelled MCP. It does not autonomously browse, download code, write Git or install components.
 
 ## Sources
 
@@ -69,3 +69,7 @@ Seed evidence is in each catalogue record. Framework/server implementation refer
 - https://docs.pmnd.rs/
 
 Third-party resource licences remain with their owners. Review the exact upstream licence before copying code or assets. No project-wide open-source licence has been chosen for this private first build.
+
+## Version 0.2
+
+Typo-tolerant shared search, URL filters, design collections, related resources and use-case notes. The public JSON index lives at /interface-lib/catalog.json. GitHub Pages publishes static, prerendered TanStack output. Configure Settings → Pages → Source: GitHub Actions if automatic enablement is unavailable. No secrets are required for builds; the built-in GitHub Actions token deploys Pages.

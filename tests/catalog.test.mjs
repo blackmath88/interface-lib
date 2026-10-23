@@ -6,4 +6,5 @@ test('AND search finds glass and applies filters',()=>{assert.equal(searchEntrie
 test('duplicate and insecure URLs are rejected',()=>{assert.ok(validateEntries([entries[0],entries[0]]).some(e=>e.includes('duplicate')));assert.ok(validateEntries([{...entries[0],url:'javascript:alert(1)'}]).some(e=>e.includes('HTTPS')))});
 test('review requires evidence',()=>assert.ok(validateEntries([{...entries[0],evidence:[]}]).some(e=>e.includes('evidence'))));
 test('brief contains provenance and default stack',()=>{const b=buildBrief([entries[0]]);assert.ok(b.includes('TanStack Start'));assert.ok(b.includes(entries[0].url));assert.ok(b.includes('not-checked'))});
+test('fuzzy search and collections',()=>{assert.equal(searchEntries(entries,{query:'horizntal tiles'})[0].id,'horizontal-tiles');assert.ok(searchEntries(entries,{collection:'Spatial'}).every(e=>e.collections.includes('Spatial')))});
 test('malformed fields fail clearly',()=>{assert.ok(validateEntries([null]).length);assert.ok(validateEntries([{...entries[0],addedAt:'2026-02-30'}]).length)});
