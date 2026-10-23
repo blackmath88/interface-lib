@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "defaultStack": [
+    "TanStack Start v1",
+    "React",
+    "TypeScript"
+  ],
+  "stackPolicy": "Default, not mandatory. Document a use-case-based reason for alternatives.",
+  "reusePolicy": "Index upstream resources. Do not mirror implementation code, demos or assets.",
+  "reviewPolicy": "Reviewed means a curator inspected documented evidence, not that source code or browser support was tested.",
+  "updatePolicy": "Agent edits JSON on a branch; validate, review diff, open a PR. No automatic merging."
+}

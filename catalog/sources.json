@@ -1,0 +1,32 @@
+[
+  {
+    "id": "pmndrs",
+    "url": "https://docs.pmnd.rs/",
+    "focus": "React 3D, materials, animation",
+    "method": "Follow official docs, GitHub links and examples; use upstream MCP where available."
+  },
+  {
+    "id": "three",
+    "url": "https://threejs.org/",
+    "focus": "Rendering and examples",
+    "method": "Check official examples and releases."
+  },
+  {
+    "id": "motion",
+    "url": "https://motion.dev/",
+    "focus": "Interaction and motion",
+    "method": "Review official examples and docs."
+  },
+  {
+    "id": "react-bits",
+    "url": "https://reactbits.dev/",
+    "focus": "Creative UI",
+    "method": "Review individual components and their source links."
+  },
+  {
+    "id": "shadcn",
+    "url": "https://ui.shadcn.com/",
+    "focus": "UI foundations",
+    "method": "Review components and registry discovery."
+  }
+]

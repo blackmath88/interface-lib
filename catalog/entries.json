@@ -1,0 +1,318 @@
+[
+  {
+    "id": "pmndrs",
+    "title": "Poimandres",
+    "kind": "ecosystem",
+    "category": "3D & scenes",
+    "url": "https://docs.pmnd.rs/",
+    "summary": "A connected ecosystem for expressive React experiences.",
+    "tags": [
+      "react",
+      "threejs",
+      "3d",
+      "animation"
+    ],
+    "integrationNotes": "Review the relevant upstream documentation before choosing packages.",
+    "status": "reviewed",
+    "addedAt": "2026-10-23",
+    "lastReviewedAt": "2026-10-23",
+    "evidence": [
+      {
+        "url": "https://docs.pmnd.rs/",
+        "note": "Official documentation or listing checked; this is not an implementation audit."
+      }
+    ],
+    "license": "not-checked",
+    "sourceUrl": null,
+    "upstreamMcp": "https://docs.pmnd.rs/api/mcp"
+  },
+  {
+    "id": "react-three-fiber",
+    "title": "React Three Fiber",
+    "kind": "library",
+    "category": "3D & scenes",
+    "url": "https://pmndrs.github.io/react-three-fiber/",
+    "summary": "Build Three.js scenes using React components.",
+    "tags": [
+      "react",
+      "threejs",
+      "3d",
+      "canvas"
+    ],
+    "integrationNotes": "Keep browser rendering behind a client boundary; select compatible React and Fiber versions.",
+    "status": "reviewed",
+    "addedAt": "2026-10-23",
+    "lastReviewedAt": "2026-10-23",
+    "evidence": [
+      {
+        "url": "https://docs.pmnd.rs/",
+        "note": "Official documentation or listing checked; this is not an implementation audit."
+      }
+    ],
+    "license": "not-checked",
+    "sourceUrl": null,
+    "upstreamMcp": null
+  },
+  {
+    "id": "drei",
+    "title": "Drei",
+    "kind": "library",
+    "category": "3D & scenes",
+    "url": "https://pmndrs.github.io/drei/",
+    "summary": "Scene helpers and abstractions for React Three Fiber.",
+    "tags": [
+      "react",
+      "threejs",
+      "3d",
+      "materials"
+    ],
+    "integrationNotes": "Select individual helpers after checking their renderer requirements.",
+    "status": "reviewed",
+    "addedAt": "2026-10-23",
+    "lastReviewedAt": "2026-10-23",
+    "evidence": [
+      {
+        "url": "https://docs.pmnd.rs/",
+        "note": "Official documentation or listing checked; this is not an implementation audit."
+      }
+    ],
+    "license": "not-checked",
+    "sourceUrl": null,
+    "upstreamMcp": null
+  },
+  {
+    "id": "react-spring",
+    "title": "React Spring",
+    "kind": "library",
+    "category": "Motion & interaction",
+    "url": "https://react-spring.io/",
+    "summary": "Spring-based animation primitives for React.",
+    "tags": [
+      "react",
+      "motion",
+      "spring"
+    ],
+    "integrationNotes": "Choose a rendering target and check reduced-motion behaviour.",
+    "status": "reviewed",
+    "addedAt": "2026-10-23",
+    "lastReviewedAt": "2026-10-23",
+    "evidence": [
+      {
+        "url": "https://docs.pmnd.rs/",
+        "note": "Official documentation or listing checked; this is not an implementation audit."
+      }
+    ],
+    "license": "not-checked",
+    "sourceUrl": null,
+    "upstreamMcp": null
+  },
+  {
+    "id": "postprocessing",
+    "title": "React Postprocessing",
+    "kind": "library",
+    "category": "Materials & atmosphere",
+    "url": "https://pmndrs.github.io/react-postprocessing/",
+    "summary": "Postprocessing effects for React Three Fiber scenes.",
+    "tags": [
+      "react",
+      "3d",
+      "effects"
+    ],
+    "integrationNotes": "Check renderer support and benchmark effects on target devices.",
+    "status": "reviewed",
+    "addedAt": "2026-10-23",
+    "lastReviewedAt": "2026-10-23",
+    "evidence": [
+      {
+        "url": "https://docs.pmnd.rs/",
+        "note": "Official documentation or listing checked; this is not an implementation audit."
+      }
+    ],
+    "license": "not-checked",
+    "sourceUrl": null,
+    "upstreamMcp": null
+  },
+  {
+    "id": "threejs",
+    "title": "Three.js",
+    "kind": "library",
+    "category": "3D & scenes",
+    "url": "https://threejs.org/",
+    "summary": "The underlying 3D toolkit, with docs and a broad example collection.",
+    "tags": [
+      "threejs",
+      "webgl",
+      "webgpu",
+      "3d"
+    ],
+    "integrationNotes": "Use directly when React scene composition is unnecessary.",
+    "status": "reviewed",
+    "addedAt": "2026-10-23",
+    "lastReviewedAt": "2026-10-23",
+    "evidence": [
+      {
+        "url": "https://threejs.org/",
+        "note": "Official documentation or listing checked; this is not an implementation audit."
+      }
+    ],
+    "license": "not-checked",
+    "sourceUrl": null,
+    "upstreamMcp": null
+  },
+  {
+    "id": "motion",
+    "title": "Motion",
+    "kind": "library",
+    "category": "Motion & interaction",
+    "url": "https://motion.dev/",
+    "summary": "Motion tools for layouts, scrolling and gestures.",
+    "tags": [
+      "react",
+      "motion",
+      "scroll",
+      "gestures"
+    ],
+    "integrationNotes": "Use for DOM interaction; choose individual upstream examples.",
+    "status": "reviewed",
+    "addedAt": "2026-10-23",
+    "lastReviewedAt": "2026-10-23",
+    "evidence": [
+      {
+        "url": "https://motion.dev/",
+        "note": "Official documentation or listing checked; this is not an implementation audit."
+      }
+    ],
+    "license": "not-checked",
+    "sourceUrl": null,
+    "upstreamMcp": null
+  },
+  {
+    "id": "shadcn-ui",
+    "title": "shadcn/ui",
+    "kind": "collection",
+    "category": "UI foundations",
+    "url": "https://ui.shadcn.com/",
+    "summary": "Composable UI components with source you can customise.",
+    "tags": [
+      "react",
+      "components",
+      "forms",
+      "accessible"
+    ],
+    "integrationNotes": "Follow the current TanStack installation instructions upstream.",
+    "status": "reviewed",
+    "addedAt": "2026-10-23",
+    "lastReviewedAt": "2026-10-23",
+    "evidence": [
+      {
+        "url": "https://ui.shadcn.com/",
+        "note": "Official documentation or listing checked; this is not an implementation audit."
+      }
+    ],
+    "license": "not-checked",
+    "sourceUrl": null,
+    "upstreamMcp": null
+  },
+  {
+    "id": "react-bits",
+    "title": "React Bits",
+    "kind": "collection",
+    "category": "Materials & atmosphere",
+    "url": "https://reactbits.dev/",
+    "summary": "Creative React components, text effects and backgrounds.",
+    "tags": [
+      "react",
+      "animation",
+      "backgrounds",
+      "text"
+    ],
+    "integrationNotes": "Review each component\u2019s dependencies, accessibility and terms.",
+    "status": "reviewed",
+    "addedAt": "2026-10-23",
+    "lastReviewedAt": "2026-10-23",
+    "evidence": [
+      {
+        "url": "https://reactbits.dev/",
+        "note": "Official documentation or listing checked; this is not an implementation audit."
+      }
+    ],
+    "license": "not-checked",
+    "sourceUrl": null,
+    "upstreamMcp": null
+  },
+  {
+    "id": "horizontal-tiles",
+    "title": "Horizontal Tiles",
+    "kind": "demo",
+    "category": "Layout & navigation",
+    "url": "https://pmndrs.github.io/examples/examples/horizontal-tiles",
+    "summary": "An expandable, scrollable horizontal gallery reference.",
+    "tags": [
+      "gallery",
+      "scroll",
+      "horizontal",
+      "tiles"
+    ],
+    "integrationNotes": "Demo listing confirmed; implementation and licence have not been inspected.",
+    "status": "reference",
+    "addedAt": "2026-10-23",
+    "lastReviewedAt": "2026-10-23",
+    "evidence": [
+      {
+        "url": "https://pmndrs.github.io/examples/examples/horizontal-tiles",
+        "note": "Official documentation or listing checked; this is not an implementation audit."
+      }
+    ],
+    "license": "not-checked",
+    "sourceUrl": null,
+    "upstreamMcp": null
+  },
+  {
+    "id": "webgpu-glass",
+    "title": "WebGPU Glass Material",
+    "kind": "demo",
+    "category": "Materials & atmosphere",
+    "url": "https://webgpu-glass-material.vercel.app/",
+    "summary": "Anderson Mancini\u2019s glass-material exploration.",
+    "tags": [
+      "webgpu",
+      "glass",
+      "materials",
+      "refraction"
+    ],
+    "integrationNotes": "Visual reference only. Source, licence and compatibility require investigation.",
+    "status": "reference",
+    "addedAt": "2026-10-23",
+    "lastReviewedAt": "2026-10-23",
+    "evidence": [
+      {
+        "url": "https://webgpu-glass-material.vercel.app/",
+        "note": "Official documentation or listing checked; this is not an implementation audit."
+      }
+    ],
+    "license": "not-checked",
+    "sourceUrl": null,
+    "upstreamMcp": null
+  },
+  {
+    "id": "image-g",
+    "title": "Image G",
+    "kind": "demo",
+    "category": "Layout & navigation",
+    "url": "https://pmndrs.github.io/examples/image-g",
+    "summary": "User-supplied image gallery reference awaiting review.",
+    "tags": [
+      "gallery",
+      "images",
+      "react"
+    ],
+    "integrationNotes": "The supplied URL could not be inspected. Resolve its canonical source before recommending.",
+    "status": "unverified",
+    "addedAt": "2026-10-23",
+    "lastReviewedAt": null,
+    "evidence": [],
+    "license": "not-checked",
+    "sourceUrl": null,
+    "upstreamMcp": null
+  }
+]
