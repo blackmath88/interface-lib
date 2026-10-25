@@ -739,5 +739,48 @@
     ],
     "avoidWhen": "The effect or dependency adds complexity without supporting the user task. Check a simpler native approach first.",
     "relatedIds": []
+  },
+  {
+    "id": "svg-stroke-dasharray-clippath",
+    "title": "SVG stroke-dasharray and clipPath (MDN)",
+    "kind": "library",
+    "category": "UI foundations",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Attribute/stroke-dasharray",
+    "summary": "Reference for the two SVG features that make stitched or wrapped outlines and bounded fills possible without a drawing library.",
+    "tags": [
+      "svg",
+      "stroke",
+      "dasharray",
+      "clippath",
+      "icons",
+      "material",
+      "build-time"
+    ],
+    "integrationNotes": "Baseline widely available. For build-time 'thread' icons (Lumpesammlig sample 011): a cord outline is one contour stroked three times (offset shadow, body, then a narrower dashed round-capped stroke as the wrapped highlight; round caps extend each dash by half the width, so keep gaps wider than dashes). A region fill can be one <path> whose subpaths are the stitches, cut to the region by intersecting each stitch line with the polygon at generation time; that avoids <clipPath> entirely and keeps node count at three or four per region. Reuse via <symbol>/<use> in one inline sprite; generate a separate symbol per size tier rather than scaling one drawing. Keep gradient/filter ids unique per page.",
+    "status": "reference",
+    "addedAt": "2026-10-25",
+    "lastReviewedAt": "2026-10-25",
+    "evidence": [
+      {
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Attribute/stroke-dasharray",
+        "note": "Dash/gap semantics and Baseline status read on 2026-10-25."
+      },
+      {
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/clipPath",
+        "note": "Clip semantics (rendering only, pointer events ignore clipped areas) read on 2026-10-25; informed the decision to clip geometrically instead."
+      }
+    ],
+    "license": "not-checked",
+    "sourceUrl": null,
+    "upstreamMcp": null,
+    "collections": [
+      "Editorial"
+    ],
+    "useCases": [
+      "Icon sets with a stitched, wrapped or embossed outline that must stay crisp at every pixel ratio.",
+      "Static procedural fills generated at build time and reused through <use>."
+    ],
+    "avoidWhen": "The surface needs per-frame redrawing or a count-based reveal; a Canvas or shader approach handles that better than thousands of SVG subpaths.",
+    "relatedIds": []
   }
 ]
