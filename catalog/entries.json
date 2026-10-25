@@ -739,5 +739,89 @@
     ],
     "avoidWhen": "The effect or dependency adds complexity without supporting the user task. Check a simpler native approach first.",
     "relatedIds": []
+  },
+  {
+    "id": "stitch-meshes",
+    "title": "Stitch Meshes (Yuksel et al., SIGGRAPH 2012)",
+    "kind": "demo",
+    "category": "Materials & atmosphere",
+    "url": "https://www.cemyuksel.com/research/stitchmeshes/",
+    "summary": "Research project page on modelling knitted fabric at yarn level: a stitch layout mesh, per-face stitch types and relaxed yarn curves.",
+    "tags": [
+      "textile",
+      "yarn",
+      "stitch",
+      "material",
+      "research",
+      "rendering"
+    ],
+    "integrationNotes": "Not a web library. Useful as a reference for how stitched material is structured: a regular stitch layout (a chart) plus a yarn curve with thickness per stitch, relaxed so neighbours overlap. The page compares renders with photographs and claims only qualitative agreement, which is the honest bar for any web approximation. Lumpesammlig sample 010 reduced this to one rounded Canvas 2D stroke per chart cell with a contact shadow and matte highlight.",
+    "status": "reference",
+    "addedAt": "2026-10-25",
+    "lastReviewedAt": "2026-10-25",
+    "evidence": [
+      {
+        "url": "https://www.cemyuksel.com/research/stitchmeshes/",
+        "note": "Project page read on 2026-10-25: method summary, Mitsuba renders and photo comparisons. Paper: ACM TOG 31(3), 2012. No code or licence inspected."
+      }
+    ],
+    "license": "not-checked",
+    "sourceUrl": null,
+    "upstreamMcp": null,
+    "collections": [
+      "Editorial"
+    ],
+    "useCases": [
+      "Deciding how much structure a stitched or knitted material needs before it reads as thread rather than texture.",
+      "Grounding a procedural textile study in a yarn-level model rather than a noise overlay."
+    ],
+    "avoidWhen": "The interface only needs a textile look as decoration; a CSS pattern or a single prepared texture is cheaper than modelling stitches.",
+    "relatedIds": [
+      "canvas-2d-api"
+    ]
+  },
+  {
+    "id": "canvas-2d-api",
+    "title": "Canvas 2D API (MDN)",
+    "kind": "library",
+    "category": "UI foundations",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D",
+    "summary": "Reference for the browser's 2D drawing context: paths, strokes, caps, transforms and pixel ratio handling.",
+    "tags": [
+      "canvas",
+      "2d",
+      "drawing",
+      "procedural",
+      "material",
+      "vanilla"
+    ],
+    "integrationNotes": "Baseline widely available; no dependency. For procedural material at interface size: a stroke with lineCap 'round' extends half the line width past each endpoint, so a short slanted stroke per chart cell gives a rounded thread body without geometry; cap devicePixelRatio (2 is enough) and size the backing store from clientWidth/clientHeight, not a rotated bounding box; draw incrementally when a count only grows and redraw from the ground when it shrinks; keep aria-hidden decorative canvases next to native controls rather than inside them. For enlarged pixel art without blur, prefer drawing at the target size over CSS image-rendering upscaling of a small canvas.",
+    "status": "reference",
+    "addedAt": "2026-10-25",
+    "lastReviewedAt": "2026-10-25",
+    "evidence": [
+      {
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineCap",
+        "note": "lineCap values and the half-width extension of round and square caps read on 2026-10-25; marked Baseline widely available."
+      },
+      {
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/image-rendering",
+        "note": "image-rendering: pixelated / crisp-edges behaviour for upscaled pixel art read on 2026-10-25."
+      }
+    ],
+    "license": "not-checked",
+    "sourceUrl": null,
+    "upstreamMcp": null,
+    "collections": [
+      "Editorial"
+    ],
+    "useCases": [
+      "Small procedural material studies (stitches, grain, print) at icon and control size without a rendering library.",
+      "Decorative state indicators drawn beside native form controls."
+    ],
+    "avoidWhen": "The surface is large and continuously animated, or needs per-pixel lighting; a shader or a prepared bitmap scales better than many strokes per frame.",
+    "relatedIds": [
+      "stitch-meshes"
+    ]
   }
 ]
